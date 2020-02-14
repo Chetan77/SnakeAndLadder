@@ -1,2 +1,6 @@
-#!/bin/bash
-echo "WelCome to Snake and Ladder Simulator"
+function RollDie(){
+	num=$(($(($RANDOM%6))+1))
+	return $num
+}
+RollDie
+num=$?
