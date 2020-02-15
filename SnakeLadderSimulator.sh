@@ -86,12 +86,14 @@ function CheckForOption(){
 					if [[ $player1 -le 100 ]]; then
 						echo "player1 is at $player1 position"
 					else
+						echo "player1 is staying at same position "
 						player1=$ret
 					fi
 				elif [[ $option -eq 3 && $player1 -ge 0 ]]; then
 					echo "snake"
 					player1=$(($player1-$rolls))
 					if [[ $player1 -lt 0 ]]; then
+
 						player1=0
 					fi
 					echo "player1 is at $player1 position"
